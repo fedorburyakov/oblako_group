@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+  <title>Oblako Group</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav-menu">
+      <button class="burger-menu">
+        <img src="images/burger-menu.svg" alt="icon: burger-menu" class="burger-menu__icon">
+      </button>
+      <div class="shedule-button">
+        <img src="images/icon-plus.svg" alt="icon: burger-menu" class="shedule-button__icon">
+        <span class="shedule-button__text">Запланировать</span>
+      </div>
+    </nav>
+    <div class="container">
+      <span class="breadcrumbs">Главная &nbsp; — &nbsp; Планирование</span>
+      <div class="planning">
+        <img src="images/planning.svg" alt="logo: planning" class="planning__logo">
+        <p class="planning__title">Планирование</p>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <ul class="tabs">
+      <li class="tabs__item"><a href="#" class="tabs__button">Групповое</a></li>
+      <li class="tabs__item"><a href="#" class="tabs__button">Индивидуальное</a></li>
+    </ul>
+    <form class="filter">
+      <div class="filter__header">
+        <div class="filter__item filter__input">
+          <input type="text" class="filter__search" placeholder="Поиск">
+          <img src="images/icon-search.svg" alt="icon: search" class="filter__search-icon">
+        </div>
+        <div class="filter__item filter__selector">
+          <select class="filter__select">
+            <option value="" class="filter__option" checked>Все</option>
+            <option value="" class="filter__option">Не все</option>
+          </select>
+          <span class="filter__subtitle">Программа</span>
+        </div>
+        <div class="filter__item filter__selector">
+          <select class="filter__select">
+            <option value="" class="filter__option" checked>Июнь 2019</option>
+            <option value="" class="filter__option">Все</option>
+          </select>
+          <span class="filter__subtitle">Период</span>
+        </div>
+        <div class="filter__item filter__selector">
+          <select class="filter__select">
+            <option value="" class="filter__option" checked>Все</option>
+            <option value="" class="filter__option">Не все</option>
+          </select>
+          <span class="filter__subtitle">Статус</span>
+        </div>
+      </div>
+      <div class="filter__footer">
+        <span class="filter__count">42 пользователя</span>
+        <div class="filter__confirm">
+          <img src="images/icon-confirm.svg" alt="" class="filter__confirm-icon">
+          <span class="filter__confirm-text">Настроить фильтр</span>
+        </div>
+        <div class="filter__clear">
+          <img src="images/icon-clear.svg" alt="" class="filter__clear-icon">
+          <span class="filter__clear-text">Сбросить</span>
+        </div>
+      </div>
+      
+    </form>
+  </main>
+</body>
+</html>
